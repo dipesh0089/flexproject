@@ -22,6 +22,9 @@
             /* padding-left: 45px; */
             /* padding-right: 50px; */
             padding: 0 55px;
+
+
+        
         }
        
          .content .card
@@ -32,6 +35,8 @@
            margin-left: 30px;
            
            text-align: center;
+           position: relative;
+        
     
         }
         .card i
@@ -46,6 +51,48 @@
             /* margin-bottom: 50px; */
             line-height: 70px;
         }
+        .effect
+        {
+            
+            height: 290px;
+            width: 350px;
+            position: absolute;
+            top: 20px;
+            left: 0px;
+            color: white;
+            font-family: sans-serif;
+            background-color: rgb(230, 0, 0);
+            /* transition: 1s; */
+        
+            display: none;
+
+
+        }
+        .effect button
+        {
+            height: 50px;
+            width: 170px;
+            background: none;
+            color: white;
+            border: 1px solid white;
+        }
+        .effect .icon
+        {
+            font-size: 90px;
+            margin-top: -40px;
+        }
+        .effect .pk
+        {
+            font-family: sans-serif;
+            font-weight: 700;
+            /* margin-bottom: 50px; */
+            line-height: 70px;
+        }
+        .card:hover .effect
+        {
+top: 0;
+display: block;;
+        }
         
     </style>
 </head>
@@ -58,7 +105,16 @@
                 <i class="fa fa-support"></i>
                 
             </div>
-            <p>LOTS OF LOCATION</p>
+            <p>7/24 CAR SUPPORT</p>
+            <div class="effect">
+                <div class="icon">
+                    <i class="fa fa-support"></i>
+                    
+                </div>
+                <p class="pk">7/24 CAR SUPPORT</p>
+                <button>REDMORE</button>
+
+            </div>
 
         </div>
 
@@ -68,7 +124,16 @@
                 <i class="fa fa-calendar"></i>
                 
             </div>
-            <p>LOTS OF LOCATION</p>
+            <p>RESERVATION ANYTIME</p>
+            <div class="effect">
+                <div class="icon">
+                    <i class="fa fa-calendar"></i>
+                    
+                </div>
+                <p class="pk">RESERVATION ANYTIME</p>
+                <button>REDMORE</button>
+
+            </div>
 
         </div>
 
@@ -78,6 +143,15 @@
                 
             </div>
             <p>LOTS OF LOCATION</p>
+            <div class="effect">
+                <div class="icon">
+                    <i class="fa fa-map-marker"></i>
+                    
+                </div>
+                <p class="pk">LOTS OF LOCATION</p>
+                <button>REDMORE</button>
+
+            </div>
 
         </div>
 
