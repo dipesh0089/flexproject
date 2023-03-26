@@ -9,16 +9,21 @@
         *{box-sizing: border-box;margin: 0;padding: 0;}
         .four-container
         {
-            height: 495px;
+            /* height: 495px; */
             background: black;
-            margin: 50px auto;
+            /* margin: 50px auto; */
+            
             display: flex;
+            flex-wrap: wrap;
+
+            justify-content: center;
+            align-items: center;
         }
         .four-container .four-left
         {
             height: 495px;
-            width: 50%;
-            /* background: burlywood; */
+            width: 700px;
+            background: burlywood;
             padding: 66px 60px;
             font-family: sans-serif;
             color: white;
@@ -73,16 +78,16 @@
         .four-container .four-right
         {
             height: 495px;
-            width: 50%;
-            /* background: skyblue; */
+            width: 700px;
+            background: skyblue;
         
-            padding: 66px 30px;
+            padding: 66px 60px;
         }
-        /* @media(max-width: 800px)
+        @media(max-width: 600px)
         {
+            .four-container .four-left{width: 100%;}
             .four-container .four-right{width: 100%;}
-            .four-container .four-right{width: 100%;}
-        } */
+        }
     </style>
 </head>
 <body>

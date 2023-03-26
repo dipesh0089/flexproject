@@ -16,12 +16,13 @@
             /* margin-top: 50px; */
             
             display: flex;
-            flex-wrap: ;
-            /* justify-content: center; */
+            flex-wrap: wrap;
+
+            justify-content: center;
             align-items: center;
             /* padding-left: 45px; */
             /* padding-right: 50px; */
-            padding: 0 55px;
+            
 
 
         
@@ -36,20 +37,25 @@
            
            text-align: center;
            position: relative;
+           padding: 75px 0;
         
     
+        }
+        @media(max-width: 600px;)
+        {
+            .content .card{width: 100;}
         }
         .card i
         {
             font-size: 90px;
-            margin-top: 75px;
+            /* margin-top: 75px; */
         }
         .card p
         {
             font-family: sans-serif;
             font-weight: 700;
-            /* margin-bottom: 50px; */
-            line-height: 70px;
+            margin: 20px 0;
+            /* line-height: 70px; */
         }
         .effect
         {
@@ -63,6 +69,7 @@
             font-family: sans-serif;
             background-color: rgb(230, 0, 0);
             /* transition: 1s; */
+            padding: 30px;
         
             display: none;
 
@@ -79,19 +86,19 @@
         .effect .icon
         {
             font-size: 90px;
-            margin-top: -40px;
+            
         }
         .effect .pk
         {
             font-family: sans-serif;
             font-weight: 700;
-            /* margin-bottom: 50px; */
-            line-height: 70px;
+            margin: 30px;
+            /* line-height: 70px; */
         }
         .card:hover .effect
         {
-top: 0;
-display: block;;
+            top: 0;
+            display: block;
         }
         
     </style>

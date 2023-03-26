@@ -39,20 +39,28 @@
         }
         .co .image-info
         {
-            height: 550px;
+            /* height: 550px; */
             background-color: cornflowerblue;
             /* border: 1px solid; */
-            padding-left: 45px;
+
             display: flex;
-            /* justify-content: center; */
+            flex-wrap: wrap;
+
+            justify-content: center;
+            align-items: center;
         }
         .image-info .info
         {
-            height: 475px;
-            width: 250px;
+            /* height: 475px; */
+            /* width: 250px; */
             background: darkgray;
-            margin-left: 30px;
+            /* margin-left: 30px; */
+            margin: 10px 15px;
 
+        }
+        @media(max-width: 600px;)
+        {
+            .image-info .info{width: 100%;}
         }
         .image-info .info .image
         {
@@ -76,6 +84,11 @@
         {
             text-decoration: none;
             color: red;
+        }
+
+        @media(max-width: 500px)
+        {
+            
         }
 
         

@@ -11,7 +11,7 @@
         .five-container
         {
             height: 680px;
-            /* background: gray; */
+            background: gray;
             text-align: center;
             font-family: sans-serif;
             padding-top: 40px
@@ -29,12 +29,14 @@
         }
         .five-container .best-offers
         {
-            height: 70px;
-            /* background-color: indigo; */
+            /* height: 70px; */
+            background-color: indigo;
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
             align-items: center;
             font-weight: bold;
+            margin-bottom: 10px;
             
         }
         .five-container .best-offers .best
@@ -44,7 +46,7 @@
             padding: 12PX 40PX;
             
             /* border: 1px solid; */
-            margin-left: 5px;
+            
             background: black;
             color: rgb(165, 171, 183);
         }
@@ -53,36 +55,43 @@
             background: red;
             color: white;
         }
+        .five-container .best-offers .kl
+        {
+            margin: 0 5px;
+        }
 
 
         .five-container .section-co
         {
-            height: 410px;
-            /* background: burlywood; */
+            /* height: 410px; */
+            background: burlywood;
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
-            align-items: center;
+            align-items: center; 
+            /* padding: 0px 65px; */
         }
 
 
         .section-co .cars1
         {
             height: 380px;
-            width: 354px;
-            /* background: cornflowerblue; */
+            /* width: 354px; */
+            background: cornflowerblue;
             border: 1px solid rgb(165, 171, 183);
-            margin-left: 30px;
-            margin-right: 30px;
+            /* margin-left: 30px; */
+            /* margin-right: 30px; */
+            margin: 0px 10px;
             
         }
         .cars1 .car-image
         {
             height: 225px;
             width: 354px;
-            /* background: orange; */
+            background: orange;
             background: url(./image/car-370x220x7-plbiaglbvvsg9w81aw1mk3i1xzzozhzdky67evisu4.jpg);
             background-size: 100% 100%;
-            padding: 80px 140px;
+            position: relative;
             
         }
         .cars1 .bi
@@ -101,13 +110,16 @@
         {
             height: 70px;
             width: 70px;
-            /* background: chocolate; */
+            background: chocolate;
             border: 1px solid;
             text-align: center;
             padding: 4px 4px;
             border-radius: 50%;
             opacity: 0.60;
             display: none;
+            position: absolute;
+            top: 80px;
+            left: 140px;
         }
 
         .cars1 .car-image .eye-effects .eye-effect1
@@ -117,7 +129,8 @@
             border-radius: 50%;
             background: black;
             text-align: center;
-            padding: 20px;
+            padding: 20px;  
+            
             
         }
         .eye-effect1 .fa-eye
@@ -132,13 +145,13 @@
         {
             height: 155px;
             width: 354px;
-            /* background: red; */
+            background: red;
         }
         .cars1 .car-text .car-text-up
         {
             height: 120px;
             width: 354px;
-            /* background: gray; */
+            background: gray;
             text-align: center;
             padding: 10px;
         }
@@ -175,7 +188,7 @@
         {
             height: 35px;
             width: 354px;
-            /* background-color: yellow; */
+            background-color: yellow;
             display: flex;
             
             
@@ -184,11 +197,16 @@
         {
             height: 35px;
             width: 88.5px;
-            /* background: darkcyan; */
+            background: darkcyan;
             border: 1px solid rgb(165, 171, 183);
             color: rgb(165, 171, 183);
             text-align: center;
             padding: 8px;
+        }
+        @media(max-width: 600px)
+        {
+            .five-container .best-offers .best{width: 100%;}
+            .section-co .cars1{width: 100%;}
         }
 
     </style>
@@ -201,7 +219,7 @@
         </h2>
         <div class="best-offers">
             <div class="best k">BEST OFFERS</div>
-            <div class="best">ECONOMIC CARS</div>
+            <div class="best kl">ECONOMIC CARS</div>
             <div class="best">POPULAR CARS</div>
 
         </div>
